@@ -2,43 +2,24 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav style={styles.nav}>
-            <div style={styles.logo}>My Portfolio</div>
-            <ul style={styles.navLinks}>
-                <li><a href="#home" style={styles.link}>Home</a></li>
-                <li><a href="#about" style={styles.link}>About</a></li>
-                <li><a href="#projects" style={styles.link}>Projects</a></li>
-                <li><a href="#contact" style={styles.link}>Contact</a></li>
+        <nav className="flex justify-between items-center px-8 py-4 bg-gray-900 text-white">
+            <div className="font-bold text-2xl">My Portfolio</div>
+            <ul className="flex gap-6 list-none m-0 p-0">
+                <li>
+                    <a href="#home" className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold">Home</a>
+                </li>
+                <li>
+                    <a href="#about" className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold">About</a>
+                </li>
+                <li>
+                    <a href="#projects" className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold">Contact</a>
+                </li>
             </ul>
         </nav>
     );
-};
-
-const styles = {
-    nav: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '1rem 2rem',
-        background: '#222',
-        color: '#fff',
-    },
-    logo: {
-        fontWeight: 'bold',
-        fontSize: '1.5rem',
-    },
-    navLinks: {
-        listStyle: 'none',
-        display: 'flex',
-        gap: '1.5rem',
-        margin: 0,
-        padding: 0,
-    },
-    link: {
-        color: '#fff',
-        textDecoration: 'none',
-        fontSize: '1rem',
-    },
 };
 
 export default Navbar;
