@@ -10,6 +10,9 @@ const Footer = () => (
         <li>
             <a href="#about" className='text-white'>About</a>
         </li>
+        <li>
+            <a href="#contact" className='text-white'>Contact</a>
+        </li>
         </ul>
         <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
     </footer>
