@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-50 flex justify-between items-center px-8 bg-black py-4">
-            <div className="font-bold text-2xl text-white">My Portfolio</div>
+        <nav className="sticky top-0 z-50 flex justify-between items-center px-8 bg-white py-4">
+            <div className="font-bold text-3xl text-black">My Portfolio</div>
             <ul className="flex gap-6 list-none m-0 p-0">
                 <li>
                     <Link 
                       to="/" 
-                      className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold"
+                      className="text-black text-2xl hover:text-gray-900 transition-colors hover:font-bold"
                     >
                       Home
                     </Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <li>
                     <Link 
                       to="/projects" 
-                      className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold"
+                      className="text-black text-2xl hover:text-gray-900 transition-colors hover:font-bold"
                     >
                       Projects
                     </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <li>
                     <Link 
                       to="/contact" 
-                      className="text-white text-base hover:text-gray-300 transition-colors hover:text-lg font-bold"
+                      className="text-black text-2xl hover:text-gray-900 transition-colors hover:font-bold"
                     >
                       Contact
                     </Link>

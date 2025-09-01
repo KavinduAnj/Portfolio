@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { FaInstagram, FaGithub, FaDribbble, FaLinkedin, FaGoogle } from "react-icons/fa";
+import pic1 from '../assets/pic1.jpg';
+
 
 const Home = () => {
     return (
@@ -21,7 +23,7 @@ const Home = () => {
         href="https://www.linkedin.com/in/kavindu-anjana-875711295/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-pink-400 text-2xl transition-colors duration-300"
+        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
       >
         <FaLinkedin />
       </a>
@@ -31,7 +33,7 @@ const Home = () => {
         href="https://github.com/KavinduAnj"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-black text-2xl transition-colors duration-300"
+        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
       >
         <FaGithub />
       </a>
@@ -39,7 +41,7 @@ const Home = () => {
         href="https://www.cloudskillsboost.google/profile/badges"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-black text-2xl transition-colors duration-300"
+        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
       >
         <FaGoogle />
       </a>
@@ -56,16 +58,20 @@ const Home = () => {
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 2 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-4 text-xl md:text-2xl text-gray-500"
+          className="mt-4 text-2xl md:text-3xl text-gray-500"
         >
-          A passionate Web Developer 🚀
+          A Software Developer
         </motion.p>
 
       </div>
-      <div>
-
+      <div className='flex flex-col m-20 items-center justify-center'>
+        <img
+          src="\src\assets\pic1.jpg"
+          alt="Profile"
+          className="w-40 h-40 rounded-full object-cover mx-auto"
+        />
       </div>
       </div>
     );
