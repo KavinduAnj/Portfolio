@@ -7,7 +7,7 @@ import pic1 from '../assets/pic1.jpg';
 const Home = () => {
     return (
       <div className='flex min-h-screen'>
-          <div className="flex flex-col space-y-10 m-30 items-center justify-center">
+          <div className="flex flex-col space-y-10 m-40 items-center justify-center">
       {/* Instagram */}
       <a
         href="https://www.instagram.com/__kavindu__anjana__/"
@@ -70,7 +70,7 @@ const Home = () => {
         <img
           src="\src\assets\pic1.jpg"
           alt="Profile"
-          className="w-40 h-40 rounded-full object-cover mx-auto"
+          className="w-80 h-80 object-cover mx-auto"
         />
       </div>
       </div>
