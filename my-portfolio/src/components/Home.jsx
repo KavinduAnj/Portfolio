@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { FaInstagram, FaGithub, FaDribbble, FaLinkedin, FaGoogle } from "react-icons/fa";
 import pic1 from '../assets/pic1.jpg';
+import { Typewriter } from "react-simple-typewriter";
 
 
 const Home = () => {
@@ -62,17 +63,35 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="mt-4 text-2xl md:text-3xl text-gray-500"
         >
-          A Software Developer
+          A Software Developer <Typewriter
+            words={["...."]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={150}
+            deleteSpeed={80}
+            delaySpeed={900}
+          />
         </motion.p>
 
       </div>
-      <div className='flex flex-col m-20 items-center justify-center'>
-        <img
-          src="\src\assets\pic1.jpg"
-          alt="Profile"
-          className="w-80 h-80 object-cover mx-auto"
-        />
-      </div>
+        <div className='flex flex-col m-20 items-center justify-center'>
+          <motion.img
+            src="\src\assets\pic1.jpg"
+            alt="Profile"
+            className="w-80 h-80 rounded-4xl object-cover mx-auto"
+            style={{ borderStyle: "solid" }}
+            animate={{
+              borderWidth: [2, 6, 2],
+              boxShadow: [
+                "0 0 0px rgba(59,130,246,0.5)",   // small glow
+                "0 0 30px rgba(59,130,246,0.8)",  // big glow
+                "0 0 0px rgba(59,130,246,0.5)",   // back to small
+              ]
+            }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
       </div>
     );
 };
