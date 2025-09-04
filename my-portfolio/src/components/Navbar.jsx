@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li>
                     <Link 
                       to="/" 
-                      className="text-black text-2xl hover:text-gray-900 transition-colors hover:font-bold"
+                      className="text-black text-2xl hover:text-blue-900 transition-colors hover:font-bold"
                     >
                       Home
                     </Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <li>
                     <Link 
                       to="/projects" 
-                      className="text-black text-2xl hover:text-gray-900 transition-colors hover:font-bold"
+                      className="text-black text-2xl hover:text-blue-900 transition-colors hover:font-bold"
                     >
                       Projects
                     </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <li>
                     <Link 
                       to="/contact" 
-                      className="text-black text-2xl hover:text-gray-900 transition-colors hover:font-bold"
+                      className="text-black text-2xl hover:text-blue-900 transition-colors hover:font-bold"
                     >
                       Contact
                     </Link>

@@ -14,7 +14,7 @@ const Home = () => {
         href="https://www.instagram.com/__kavindu__anjana__/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
+        className="text-black hover:text-blue-600 text-2xl transition-colors duration-300"
       >
         <FaInstagram />
       </a>
@@ -24,7 +24,7 @@ const Home = () => {
         href="https://www.linkedin.com/in/kavindu-anjana-875711295/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
+        className="text-black hover:text-blue-600 text-2xl transition-colors duration-300"
       >
         <FaLinkedin />
       </a>
@@ -34,7 +34,7 @@ const Home = () => {
         href="https://github.com/KavinduAnj"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
+        className="text-black hover:text-blue-600 text-2xl transition-colors duration-300"
       >
         <FaGithub />
       </a>
@@ -42,7 +42,7 @@ const Home = () => {
         href="https://www.cloudskillsboost.google/profile/badges"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-pink-500 text-2xl transition-colors duration-300"
+        className="text-black hover:text-blue-600 text-2xl transition-colors duration-300"
       >
         <FaGoogle />
       </a>
@@ -53,7 +53,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl text-gray-500 md:text-6xl font-bold"
+          className="text-4xl text-blue-900 md:text-6xl font-bold"
         >
           Hi, I’m <span className="text-black">Kavindu</span>
         </motion.h1>
@@ -61,7 +61,7 @@ const Home = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 2 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-4 text-2xl md:text-3xl text-gray-500"
+          className="mt-4 text-2xl md:text-3xl text-blue-900"
         >
           A Software Developer <Typewriter
             words={["...."]}
