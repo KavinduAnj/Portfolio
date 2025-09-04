@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { FaInstagram, FaGithub, FaDribbble, FaLinkedin, FaGoogle } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin, FaGoogle, FaArrowDown } from "react-icons/fa";
 import pic1 from '../assets/pic1.jpg';
 import { Typewriter } from "react-simple-typewriter";
 
@@ -50,9 +50,9 @@ const Home = () => {
 
       <div className="bg-white flex flex-col items-center justify-center m-10">
         <motion.h1
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 2 }}
           className="text-4xl text-blue-900 md:text-6xl font-bold"
         >
           Hi, I’m <span className="text-black">Kavindu</span>
@@ -85,13 +85,16 @@ const Home = () => {
               borderWidth: [2, 6, 2],
               boxShadow: [
                 "0 0 0px rgba(59,130,246,0.5)",   // small glow
-                "0 0 30px rgba(59,130,246,0.8)",  // big glow
+                "0 0 40px rgba(59,130,246,0.8)",  // big glow
                 "0 0 0px rgba(59,130,246,0.5)",   // back to small
               ]
             }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
+          <div className='items-end justify-end my-5'>< FaArrowDown/>
+          </div>
         </div>
+        
       </div>
     );
 };
