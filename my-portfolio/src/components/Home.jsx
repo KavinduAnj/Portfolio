@@ -67,8 +67,12 @@ const Home = () => {
               className="mt-3 sm:mt-4 text-base sm:text-xl md:text-2xl lg:text-3xl text-blue-900"
             >
               A Software Developer{" "}
-              <Typewriter
-                words={["...."]}
+
+            </motion.p>
+            <p className='mt-3 sm:mt-4 text-base sm:text-xl md:text-2xl lg:text-3xl text-blue-900'>
+              Let's work together
+               <Typewriter
+                words={["..."]}
                 loop={true}
                 cursor
                 cursorStyle="|"
@@ -76,7 +80,7 @@ const Home = () => {
                 deleteSpeed={80}
                 delaySpeed={900}
               />
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>
