@@ -6,10 +6,10 @@ import pic1 from '../assets/pic1.jpg';
 
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-white">
       
       {/* Left Side (Socials + Text) */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center p-6 sm:p-10 lg:p-20">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center p-30 sm:p-10 lg:p-20">
         
         {/* On desktop → row (icons + text) / On mobile → stacked */}
         <div className="flex flex-col lg:flex-row items-center lg:items-center text-center lg:text-left gap-8 lg:gap-16">
@@ -82,7 +82,7 @@ const Home = () => {
       </div>
 
       {/* Right Side (Profile + Arrow) */}
-      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-6 sm:p-10 lg:p-20">
+      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-0 sm:p-10 lg:p-20">
         <motion.img
           src={pic1}
           alt="Profile"
