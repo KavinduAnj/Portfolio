@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white z-50">
       <div className="h-16 flex justify-between items-center px-8">
-        {/* Logo */}
+       
         <div className="font-bold text-3xl text-black">
           <Link
             to="home"
@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Menu */}
+       
         <div className="hidden sm:block">
           <Link
             to="home"
@@ -61,7 +61,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="block sm:hidden pr-4 text-black"
@@ -70,7 +69,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`${isOpen ? "block" : "hidden"} sm:hidden bg-blue-100 py-4`}
       >
