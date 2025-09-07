@@ -26,9 +26,9 @@ function App() {
 
       <section
         id="projects"
-        className="h-screen flex items-center justify-center bg-gray-300"
       >
-        <h1 className="text-5xl font-bold">Projects Section</h1>
+        <h1 className="text-2xl text-center font-semibold sm:text-3xl">Projects</h1>
+        <Projects />
       </section>
 
       <section
