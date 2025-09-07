@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://KavinduAnj.github.io/Portfolio",
+  "homepage": "https://kavinduAnj.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
