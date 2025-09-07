@@ -2,15 +2,13 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://kavinduAnj.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
+
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
