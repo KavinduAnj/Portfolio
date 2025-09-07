@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -18,9 +19,9 @@ function App() {
 
       <section
         id="about"
-        className="h-screen flex items-center justify-center bg-gray-200"
       >
-        <h1 className="text-5xl font-bold">About Section</h1>
+        <h1 className="text-2xl text-center font-semibold sm:text-3xl">About Me</h1>
+        <About />
       </section>
 
       <section
