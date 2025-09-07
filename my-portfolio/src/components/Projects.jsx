@@ -1,4 +1,5 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
+import pic2 from '../assets/pic2.png'
 
 const projects = [
   {
@@ -16,8 +17,8 @@ const projects = [
   {
     title: "Travel Website",
     description: "Responsive travel landing page with animations.",
-    link: "https://your-travel-website.com",
-    image: "https://via.placeholder.com/400x250?text=Travel+Website",
+    link: "https://kavinduanj.github.io/travel-website/",
+    image: pic2,
   },
 ];
 
