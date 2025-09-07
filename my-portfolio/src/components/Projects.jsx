@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio built with React & Tailwind.",
-    link: "https://your-portfolio-link.com",
+    link: "https://portfolio-b7wa.vercel.app/",
     image: "https://via.placeholder.com/400x250?text=Portfolio+Preview",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 bg-gray-50">
+    <section id="projects" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Grid layout */}
