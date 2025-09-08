@@ -33,9 +33,9 @@ function App() {
 
       <section
         id="contact"
-        className="h-screen flex items-center justify-center bg-gray-400"
+        
       >
-        <h1 className="text-5xl font-bold">Contact Section</h1>
+        <Contact />
       </section>
       
       <Footer />

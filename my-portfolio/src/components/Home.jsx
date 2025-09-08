@@ -15,7 +15,7 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-center text-center lg:text-left gap-8 lg:gap-16">
           
           {/* Social Icons */}
-          <div className="flex flex-row lg:flex-col gap-6 lg:gap-8 justify-center">
+          <div className="flex flex-row lg:flex-col gap-6 lg:gap-8 justify-center ">
             <a
               href="https://www.instagram.com/__kavindu__anjana__/"
               target="_blank"
@@ -40,14 +40,7 @@ const Home = () => {
             >
               <FaGithub />
             </a>
-            <a
-              href="https://www.cloudskillsboost.google/profile/badges"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black hover:text-blue-600 text-xl sm:text-2xl transition-colors duration-300"
-            >
-              <FaGoogle />
-            </a>
+           
           </div>
 
           {/* Intro Text */}
