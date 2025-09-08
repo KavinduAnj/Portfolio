@@ -3,10 +3,10 @@ import pic2 from '../assets/pic2.png'
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React & Tailwind.",
-    link: "https://portfolio-b7wa.vercel.app/",
-    image: "https://via.placeholder.com/400x250?text=Portfolio+Preview",
+    title: "Travel Website",
+    description: "Responsive travel landing page with animations",
+    link: "https://kavinduanj.github.io/travel-website/",
+    image: pic2,
   },
   {
     title: "Notes App",
@@ -16,9 +16,9 @@ const projects = [
   },
   {
     title: "Travel Website",
-    description: "Responsive travel landing page with animations.",
-    link: "https://kavinduanj.github.io/travel-website/",
-    image: pic2,
+    description: ".",
+    link: "",
+    image: "",
   },
 ];
 
