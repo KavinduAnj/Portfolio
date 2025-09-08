@@ -3,7 +3,7 @@ import { FaEnvelope, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-12 bg-white">
+    <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
         {/* Left Side - Contact Info */}
         <div>

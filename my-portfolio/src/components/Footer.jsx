@@ -3,7 +3,7 @@ import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin, } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-4 rounded-2xl border-blue-100 text-gray-800 py-10">
+    <footer className="bg-gradient-to-br from-white via-blue-50 to-blue-100 border-4 rounded-2xl border-blue-100 text-gray-800 py-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-6">
         {/* Name / Brand */}
         <h2 className="text-2xl font-bold">Kavindu Anjana</h2>

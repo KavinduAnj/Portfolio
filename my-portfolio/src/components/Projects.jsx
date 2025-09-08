@@ -24,7 +24,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 bg-white">
+    <section id="projects" className="py-16 ">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Grid layout */}

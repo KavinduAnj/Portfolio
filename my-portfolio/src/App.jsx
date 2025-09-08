@@ -19,22 +19,24 @@ function App() {
 
       <section
         id="about"
+        className=''
       >
-        <h1 className="text-2xl text-center font-semibold sm:text-3xl">About Me</h1>
+        <h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">About Me</h1>
         <About />
       </section>
 
       <section
         id="projects"
+        className=''
       >
-        <h1 className="text-2xl text-center font-semibold sm:text-3xl">Projects</h1>
+        <h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Projects</h1>
         <Projects />
       </section>
 
       <section
         id="contact"
-        
-      >
+        className=''
+      ><h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Contact me</h1>
         <Contact />
       </section>
       
