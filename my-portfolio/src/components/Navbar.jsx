@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white z-50">
       <div className="h-16 flex justify-between items-center px-8">
        
-        <div className="font-bold text-3xl text-black">
+        <div className="font-bold text-xl sm:text-2xl md:text-3xl text-black">
           <Link
             to="home"
             smooth={true}
@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`${isOpen ? "block" : "hidden"} sm:hidden bg-blue-100 py-4`}
+        className={`${isOpen ? "block" : "hidden"} sm:hidden bg-blue-50 shadow-lg shadow-blue-300 rounded-4xl py-4`}
       >
         <Link
           to="home"
@@ -78,7 +78,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-900 text-center hover:font-bold block"
+          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
         >
           Home
         </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-900 text-center hover:font-bold block"
+          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
         >
           About
         </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-900 text-center hover:font-bold block"
+          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
         >
           Projects
         </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-900 text-center hover:font-bold block"
+          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
         >
           Contact
         </Link>
