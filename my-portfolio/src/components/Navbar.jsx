@@ -28,7 +28,7 @@ const Navbar = () => {
             smooth={true}
             duration={600}
             offset={-80}
-            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-900 transition-colors hover:font-bold"
+            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-800 transition-colors hover:font-bold"
           >
             Home
           </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
             smooth={true}
             duration={600}
             offset={-80}
-            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-900 transition-colors hover:font-bold"
+            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-800 transition-colors hover:font-bold"
           >
             About
           </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
             smooth={true}
             duration={600}
             offset={-80}
-            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-900 transition-colors hover:font-bold"
+            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-800 transition-colors hover:font-bold"
           >
             Projects
           </Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
             smooth={true}
             duration={600}
             offset={-80}
-            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-900 transition-colors hover:font-bold"
+            className="cursor-pointer text-black px-4 text-2xl hover:text-blue-800 transition-colors hover:font-bold"
           >
             Contact
           </Link>
