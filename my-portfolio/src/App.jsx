@@ -19,7 +19,7 @@ function App() {
 
       <section
         id="about"
-        className='bg-gradient-to-br from-white via-blue-50 to-blue-100'
+        className='bg-white'
       >
         <h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">About Me</h1>
         <About />
@@ -27,7 +27,7 @@ function App() {
 
       <section
         id="projects"
-        className='bg-gradient-to-br from-white via-blue-50 to-blue-100'
+        className='bg-white'
       >
         <h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Projects</h1>
         <Projects />
@@ -35,7 +35,7 @@ function App() {
 
       <section
         id="contact"
-        className='bg-gradient-to-br from-white via-blue-50 to-blue-100'
+        className='bg-white'
       ><h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Contact me</h1>
         <Contact />
       </section>

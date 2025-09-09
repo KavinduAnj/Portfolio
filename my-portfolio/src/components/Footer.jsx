@@ -51,7 +51,7 @@ const Footer = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noreferrer"
-            className="p-3 text-blue-400 bg-gray-100 rounded-full hover:bg-gray-300 transition"
+            className="p-3 text-blue-400 bg-gray-50 rounded-full hover:bg-gray-200 transition"
           >
             <FaLinkedin className="text-xl" />
           </a>
@@ -59,7 +59,7 @@ const Footer = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noreferrer"
-            className="p-3 text-pink-400 bg-gray-100 rounded-full hover:bg-gray-300 transition"
+            className="p-3 text-pink-400 bg-gray-50 rounded-full hover:bg-gray-200 transition"
           >
             <FaInstagram className="text-xl" />
           </a>
@@ -67,7 +67,7 @@ const Footer = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noreferrer"
-            className="p-3 bg-gray-100 rounded-full hover:bg-gray-300 transition"
+            className="p-3 bg-gray-50 rounded-full hover:bg-gray-200 transition"
           >
             <FaGithub className="text-xl" />
           </a>
