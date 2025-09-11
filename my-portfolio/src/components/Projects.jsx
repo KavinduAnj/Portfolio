@@ -1,5 +1,6 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 import pic2 from '../assets/pic2.png'
+import pic3 from '../assets/pic3.png'
 
 const projects = [
   {
@@ -9,10 +10,10 @@ const projects = [
     image: pic2,
   },
   {
-    title: "Notes App",
-    description: "A MERN stack notes app with authentication.",
+    title: "Study Compaion",
+    description: "A Study Companion with multiple features.",
     link: "https://your-notes-app.com",
-    image: "https://via.placeholder.com/400x250?text=Notes+App",
+    image: pic3,
   },
   {
     title: "Travel Website",
@@ -51,9 +52,9 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-2xl hover:bg-blue-700 transition"
                 >
-                  View Project <FaExternalLinkAlt className="ml-2" />
+                  View Project <FaLink className="ml-2" />
                 </a>
               </div>
             </div>
