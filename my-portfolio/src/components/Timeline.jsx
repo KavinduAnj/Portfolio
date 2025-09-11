@@ -30,14 +30,14 @@ const Timeline = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="mb-10 ml-6">
             {/* Dot */}
-            <div className="absolute w-3 h-3 bg-blue-900 rounded-full -left-[7px] border border-white" />
+            <div className="absolute w-3 h-3 bg-blue-700 rounded-full -left-[7px] border border-white" />
             
             {/* Content */}
             <h3 className="text-lg text-gray-600">
               {exp.title}
             </h3>
-            <p className="text-sm text-blue-900">{exp.company}</p>
-            <div className="flex items-center text-sm text-blue-950 mt-1">
+            <p className="text-sm text-blue-800">{exp.company}</p>
+            <div className="flex items-center text-sm text-blue-900 mt-1">
               <FaCalendarAlt className="mr-2" />
               {exp.date}
             </div>
