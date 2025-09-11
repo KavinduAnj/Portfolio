@@ -21,7 +21,7 @@ const Home = () => {
               href="https://www.instagram.com/__kavindu__anjana__/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-200 rounded-full hover:bg-pink-500 hover:text-white text-xl sm:text-2xl transition duration-300"
+              className="p-3 bg-gray-200 text-pink-600 rounded-full hover:bg-pink-500 hover:text-white text-xl sm:text-2xl transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -29,7 +29,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/kavindu-anjana-875711295/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-200 rounded-full hover:bg-blue-600 hover:text-white text-xl sm:text-2xl transition duration-300"
+              className="p-3 bg-gray-200 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white text-xl sm:text-2xl transition duration-300"
             >
               <FaLinkedin />
             </a>
