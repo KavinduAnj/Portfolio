@@ -1,6 +1,7 @@
 import { FaLink } from "react-icons/fa";
 import pic2 from '../assets/pic2.png'
 import pic3 from '../assets/pic3.png'
+import pic4 from '../assets/pic4.png'
 
 const projects = [
   {
@@ -16,10 +17,10 @@ const projects = [
     image: pic3,
   },
   {
-    title: "Travel Website",
-    description: ".",
-    link: "",
-    image: "",
+    title: "Portfolio Website",
+    description: "My personal portfolio website.",
+    link: "https://kavinduanj.github.io/Portfolio/",
+    image: pic4,
   },
 ];
 
