@@ -34,7 +34,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg overflow-hidden flex flex-col"
+              className="bg-white/80 backdrop-blur-md border-gray-50 rounded-2xl shadow-lg shadow-blue-100 overflow-hidden flex flex-col"
             >
               {/* Image */}
               <img

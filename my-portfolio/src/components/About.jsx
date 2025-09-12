@@ -4,7 +4,7 @@ import Timeline from './Timeline'
 const About = () => {
   return (
      <div className="relative min-h-screen p-6">
-  <article className="relative mx-auto w-full max-w-3xl rounded-3xl border border-white/20 shadow-lg shadow-blue-100 backdrop-blur-2xl">
+  <article className="relative mx-auto w-full max-w-4xl rounded-3xl border border-white/20 shadow-lg shadow-blue-100 backdrop-blur-2xl">
     <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-white/10" />
     <div className="relative font-sans sm:text-xl p-5 md:p-10 text-gray-600">
       I am an undergraduate at Sabaragamuwa University of Sri Lanka, currently

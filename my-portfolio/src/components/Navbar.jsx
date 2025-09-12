@@ -78,7 +78,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
+          className="cursor-pointer bg-blue-100 text-black text-2xl border-1 border-blue-200 rounded-4xl hover:text-blue-700 text-center hover:font-bold block py-1  m-2"
         >
           Home
         </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
+          className="cursor-pointer bg-blue-100  text-black text-2xl border-1 border-blue-200 rounded-4xl hover:text-blue-700 text-center hover:font-bold block py-1  m-2"
         >
           About
         </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
+          className="cursor-pointer bg-blue-100 text-black text-2xl border-1 border-blue-200 rounded-4xl hover:text-blue-700 text-center hover:font-bold block py-1  m-2"
         >
           Projects
         </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
           duration={600}
           offset={-80}
           onClick={() => setIsOpen(false)}
-          className="cursor-pointer text-black text-2xl hover:text-blue-700 text-center hover:font-bold block py-1"
+          className="cursor-pointer bg-blue-100 text-black text-2xl border-1 border-blue-200 rounded-4xl hover:text-blue-700 text-center hover:font-bold block py-1 m-2"
         >
           Contact
         </Link>
