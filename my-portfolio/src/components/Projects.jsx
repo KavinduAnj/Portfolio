@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Study Compaion",
     description: "A Study Companion with multiple features.",
-    link: "https://your-notes-app.com",
+    link: "https://github.com/KavinduAnj/Study-Companion-Bot",
     image: pic3,
   },
   {
