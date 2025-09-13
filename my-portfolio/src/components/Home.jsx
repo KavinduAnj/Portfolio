@@ -97,7 +97,7 @@ const Home = () => {
         <motion.img
           src={pic1}
           alt="Profile"
-          className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl object-cover shadow-lg"
+          className="w-50 h-50 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl object-cover shadow-lg"
           animate={{
             scale: [1, 1.05, 1],
             boxShadow: [
