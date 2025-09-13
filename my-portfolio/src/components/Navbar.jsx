@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
+import pic5 from "../assets/pic5.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white z-50">
       <div className="h-16 flex justify-between items-center px-8">
        
-        <div className="font-bold text-xl sm:text-2xl md:text-3xl text-black">
+        <div className="flex items-center ">
+          
           <Link
             to="home"
             smooth={true}
@@ -17,7 +19,11 @@ const Navbar = () => {
             offset={-80}
             className="cursor-pointer"
           >
-            Kavindu Anjana
+          <img
+            src={pic5}
+            alt="Logo"
+            className="h-15 w-20 object-cover"
+          />
           </Link>
         </div>
 
