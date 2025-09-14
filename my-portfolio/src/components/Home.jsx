@@ -70,7 +70,7 @@ const Home = () => {
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-900 font-medium"
             >
               <Typewriter
-                words={["Let's work together...", "Building awesome UIs", "Turning ideas into code"]}
+                words={["Let's work together...", "Turning ideas into code"]}
                 loop={true}
                 cursor
                 cursorStyle="|"
