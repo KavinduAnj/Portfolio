@@ -14,7 +14,7 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
             className="flex flex-row lg:flex-col gap-6 justify-center"
           >
             <a
@@ -46,9 +46,9 @@ const Home = () => {
           {/* Intro Text */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
             <motion.h1
-              initial={{ opacity: 0, y: -40 }}
+              initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 2 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-snug"
             >
               Hi, I’m <span className="text-blue-700">Kavindu</span>
@@ -56,7 +56,7 @@ const Home = () => {
 
             <motion.p
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              animate={{ opacity: 1.5 }}
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700"
             >
@@ -79,7 +79,8 @@ const Home = () => {
                 delaySpeed={1500}
               />
             </motion.p>
-             <motion.a
+             <div className="flex flex-raw sm:flex-row gap-4 mt-4">
+              <motion.a
               href="#contact"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -87,6 +88,15 @@ const Home = () => {
             >
               Hire Me 
             </motion.a>
+            <motion.a
+              href="#projects"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-6 px-6 py-3 rounded-full bg-black text-white text-lg sm:text-xl font-semibold shadow-lg hover:bg-gray-800 transition duration-300"
+            >
+              My Projects 
+            </motion.a>
+            </div>
           </div>
         </div>
       </div>
