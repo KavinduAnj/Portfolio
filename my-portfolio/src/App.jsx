@@ -11,7 +11,8 @@ function App() {
     <>
       <Navbar />
       
-      <section
+      <div className='bg-gradient-to-b from-blue-50 via-white to-blue-50'>
+        <section
         id="home"
       >
        <Home />
@@ -39,7 +40,7 @@ function App() {
       ><h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Contact me</h1>
         <Contact />
       </section>
-      
+     </div> 
       <Footer />
     </>
   );
