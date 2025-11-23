@@ -18,12 +18,13 @@ const About = () => {
       leadership and strategic thinking.
     </div>
   </article>
+  <div className='m-5 mx-auto max-w-4xl rounded-3xl border border-white/20 shadow-lg shadow-blue-100 backdrop-blur-2xl'>
   <div className='text-2xl text-center py-8'>
     Education & Certification
     <div className='m-5'>
       <Timeline/>
     </div>
-
+  </div>
   </div>
 </div>
 
