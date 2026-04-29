@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* Left Side (Text + Socials + Buttons) */}
-      <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-16">
+      <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-20 pt-32 pb-16 lg:py-16">
         <motion.div
           className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-8"
           variants={containerVariants}
