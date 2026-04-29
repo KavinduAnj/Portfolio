@@ -4,70 +4,60 @@ import { FaInstagram, FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import pic1 from "../assets/pic1.jpg";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100">
-      {/* Left Side (Socials + Text) */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-16">
-        <div className="flex flex-col lg:flex-row items-center lg:items-center text-center lg:text-left gap-10">
-          {/* Social Icons */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 2 }}
-            className="flex flex-row lg:flex-col gap-6 justify-center"
-          >
-            <a
-              href="https://www.instagram.com/__kavindu__anjana__/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-gray-200 text-pink-600 rounded-full hover:bg-pink-500 hover:text-white text-xl sm:text-2xl transition duration-300"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kavindu-anjana-875711295/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-gray-200 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white text-xl sm:text-2xl transition duration-300"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/KavinduAnj"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-gray-200 rounded-full hover:bg-gray-800 hover:text-white text-xl sm:text-2xl transition duration-300"
-            >
-              <FaGithub />
-            </a>
-          </motion.div>
+    <div className="relative flex flex-col lg:flex-row min-h-screen bg-gray-50 overflow-hidden">
+      {/* Premium Minimalist Background (Dot Pattern + Subtle Gradient) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* Soft top gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 to-transparent"></div>
+        {/* Dotted pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] opacity-60"></div>
+      </div>
 
+      {/* Left Side (Text + Socials + Buttons) */}
+      <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-16">
+        <motion.div
+          className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-8"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {/* Intro Text */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
+          <div className="space-y-4">
             <motion.h1
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-snug"
+              variants={itemVariants}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight"
             >
-              Hi, I’m <span className="text-blue-700">Kavindu</span>
+              Hi, I’m <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Kavindu</span>
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1.5 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700"
+              variants={itemVariants}
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-light"
             >
               A Software Developer
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-900 font-medium"
+            <motion.div
+              variants={itemVariants}
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-900 font-medium h-8"
             >
               <Typewriter
                 words={["Let's work together...", "Turning ideas into code"]}
@@ -78,54 +68,92 @@ const Home = () => {
                 deleteSpeed={70}
                 delaySpeed={1500}
               />
-            </motion.p>
-             <div className="flex flex-raw sm:flex-row gap-4 mt-4">
-              <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-6 px-6 py-3 rounded-full bg-blue-600 text-white text-lg sm:text-xl font-semibold shadow-lg hover:bg-blue-700 transition duration-300"
-            >
-              Hire Me 
-            </motion.a>
-            <motion.a
-              href="#projects"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-6 px-6 py-3 rounded-full bg-black text-white text-lg sm:text-xl font-semibold shadow-lg hover:bg-gray-800 transition duration-300"
-            >
-              My Projects 
-            </motion.a>
-            </div>
+            </motion.div>
           </div>
-        </div>
+
+          {/* Social Icons */}
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-row gap-6 justify-center lg:justify-start pt-2"
+          >
+            <a
+              href="https://www.instagram.com/__kavindu__anjana__/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white text-pink-600 rounded-full shadow-md hover:shadow-lg hover:bg-pink-50 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kavindu-anjana-875711295/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white text-blue-600 rounded-full shadow-md hover:shadow-lg hover:bg-blue-50 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/KavinduAnj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white text-gray-800 rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <FaGithub />
+            </a>
+          </motion.div>
+
+          {/* Buttons */}
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto"
+          >
+            <a
+              href="#contact"
+              className="relative group px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg font-semibold shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)] transition-all duration-300 transform hover:-translate-y-1 text-center overflow-hidden"
+            >
+              <span className="relative z-10">Hire Me</span>
+              <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a
+              href="#projects"
+              className="px-8 py-3.5 rounded-full bg-white/80 backdrop-blur-sm text-gray-900 border border-gray-200 text-lg font-semibold shadow-sm hover:shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-1 text-center"
+            >
+              My Projects
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* Right Side (Profile + Arrow) */}
-      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center px-6 sm:px-10 lg:px-20 py-16">
-        {/* Profile Image */}
-        <motion.img
-          src={pic1}
-          alt="Profile"
-          className="w-50 h-50 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl object-cover shadow-lg"
-          animate={{
-            scale: [1, 1.05, 1],
-            boxShadow: [
-              "0 0 20px rgba(59,130,246,0.5)",
-              "0 0 40px rgba(59,130,255,1)",
-              "0 0 20px rgba(59,130,246,0.5)",
-            ],
-          }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        />
+      <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-center justify-center px-6 sm:px-10 lg:px-20 py-16">
+        {/* Profile Image Container */}
+        <motion.div
+          className="relative"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        >
+          {/* Decorative soft glow behind the image */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-3xl blur-2xl opacity-30 transform scale-105"></div>
+          
+          <motion.img
+            src={pic1}
+            alt="Profile"
+            className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[22rem] lg:h-[22rem] rounded-3xl object-cover shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border-4 border-white/80"
+            animate={{ y: [-10, 10, -10] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </motion.div>
 
         {/* Arrow Down */}
         <motion.div
-          className="text-2xl mt-8 text-blue-900"
-          animate={{ y: [0, 20, 0], opacity: [1, 0.5, 1] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          className="mt-12 lg:mt-16 text-blue-500"
+          animate={{ y: [0, 12, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <FaArrowDown />
+          <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white shadow-md shadow-blue-900/5 border border-blue-50/50">
+            <FaArrowDown className="text-xl" />
+          </div>
         </motion.div>
       </div>
     </div>
