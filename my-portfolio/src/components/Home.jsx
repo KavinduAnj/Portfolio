@@ -22,14 +22,7 @@ const itemVariants = {
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col lg:flex-row min-h-screen bg-gray-50 overflow-hidden">
-      {/* Premium Minimalist Background (Dot Pattern + Subtle Gradient) */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        {/* Soft top gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 to-transparent"></div>
-        {/* Dotted pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] opacity-60"></div>
-      </div>
+    <div className="relative flex flex-col lg:flex-row min-h-screen overflow-hidden">
 
       {/* Left Side (Text + Socials + Buttons) */}
       <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-20 pt-32 pb-16 lg:py-16">
@@ -135,7 +128,7 @@ const Home = () => {
         >
           {/* Decorative soft glow behind the image */}
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-3xl blur-2xl opacity-30 transform scale-105"></div>
-          
+
           <motion.img
             src={pic1}
             alt="Profile"

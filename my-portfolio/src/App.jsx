@@ -8,41 +8,48 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      
-      <div className='bg-gradient-to-b from-blue-50 via-white to-blue-50'>
-        <section
-        id="home"
-      >
-       <Home />
-      </section>
+    <div className="relative min-h-screen bg-gray-50">
+      {/* Global Background (Dot Pattern + Subtle Gradient) */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] opacity-80"></div>
+      </div>
 
-      <section
-        id="about"
-        className='bg-white'
-      >
-        <h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">About Me</h1>
-        <About />
-      </section>
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Navbar />
+        
+        <main className="flex-grow">
+          <section id="home">
+            <Home />
+          </section>
 
-      <section
-        id="projects"
-        className='bg-white'
-      >
-        <h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Projects</h1>
-        <Projects />
-      </section>
+          <section id="about" className="py-16">
+            <div className="text-center mb-6">
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-tight">About Me</h1>
+              <div className="h-1.5 w-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto"></div>
+            </div>
+            <About />
+          </section>
 
-      <section
-        id="contact"
-        className='bg-white'
-      ><h1 className="p-4 text-2xl text-center font-semibold sm:text-3xl">Contact me</h1>
-        <Contact />
-      </section>
-     </div> 
-      <Footer />
-    </>
+          <section id="projects" className="py-16">
+            <div className="text-center mb-10">
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-tight">Projects</h1>
+              <div className="h-1.5 w-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto"></div>
+            </div>
+            <Projects />
+          </section>
+
+          <section id="contact" className="py-16">
+            <div className="text-center mb-10">
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-tight">Contact me</h1>
+              <div className="h-1.5 w-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto"></div>
+            </div>
+            <Contact />
+          </section>
+        </main> 
+        <Footer />
+      </div>
+    </div>
   );
 }
 
