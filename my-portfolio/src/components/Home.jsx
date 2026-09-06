@@ -22,7 +22,59 @@ const itemVariants = {
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col lg:flex-row min-h-screen overflow-hidden">
+    <div className="relative flex flex-col lg:flex-row min-h-screen overflow-hidden bg-slate-900">
+
+      {/* Floating background shapes — roam across the whole section */}
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+        <motion.div
+          className="absolute top-[10%] left-[5%] w-72 h-72 rounded-full bg-indigo-500/30 blur-3xl"
+          animate={{
+            x: ["0vw", "18vw", "6vw", "22vw", "0vw"],
+            y: ["0vh", "12vh", "28vh", "8vh", "0vh"],
+          }}
+          transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute bottom-[5%] right-[10%] w-96 h-96 rounded-full bg-purple-500/25 blur-3xl"
+          animate={{
+            x: ["0vw", "-14vw", "-22vw", "-6vw", "0vw"],
+            y: ["0vh", "-10vh", "6vh", "-18vh", "0vh"],
+          }}
+          transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute top-1/3 right-[15%] w-4 h-4 rounded-full border-2 border-indigo-300/60"
+          animate={{
+            x: ["0vw", "-10vw", "4vw", "0vw"],
+            y: ["0vh", "20vh", "8vh", "0vh"],
+          }}
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute top-[15%] left-[45%] w-3 h-3 rounded-full bg-purple-400/60"
+          animate={{
+            x: ["0vw", "12vw", "-8vw", "0vw"],
+            y: ["0vh", "15vh", "25vh", "0vh"],
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        />
+        <motion.div
+          className="absolute bottom-[25%] left-[10%] w-6 h-6 rounded-full border-2 border-purple-300/40"
+          animate={{
+            x: ["0vw", "15vw", "25vw", "10vw", "0vw"],
+            y: ["0vh", "-12vh", "5vh", "-6vh", "0vh"],
+          }}
+          transition={{ duration: 24, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+        />
+        <motion.div
+          className="absolute top-[55%] left-[25%] w-5 h-5 rounded-full bg-indigo-400/40"
+          animate={{
+            x: ["0vw", "-18vw", "8vw", "0vw"],
+            y: ["0vh", "10vh", "-15vh", "0vh"],
+          }}
+          transition={{ duration: 19, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+        />
+      </div>
 
       {/* Left Side (Text + Socials + Buttons) */}
       <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-20 pt-32 pb-16 lg:py-16">
@@ -36,21 +88,21 @@ const Home = () => {
           <div className="space-y-4">
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-100 leading-tight tracking-tight"
             >
-              Hi, I’m <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Kavindu</span>
+              Hi, I’m <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Kavindu</span>
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-light"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-400 font-light"
             >
               A Software Developer
             </motion.p>
 
             <motion.div
               variants={itemVariants}
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-900 font-medium h-8"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-300 font-medium h-8"
             >
               <Typewriter
                 words={["Let's work together...", "Turning ideas into code"]}
@@ -73,7 +125,7 @@ const Home = () => {
               href="https://www.instagram.com/__kavindu__anjana__/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white text-pink-600 rounded-full shadow-md hover:shadow-lg hover:bg-pink-50 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
+              className="p-3 bg-slate-800 text-pink-400 rounded-full shadow-md hover:shadow-lg hover:bg-slate-700 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <FaInstagram />
             </a>
@@ -81,7 +133,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/kavindu-anjana-875711295/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white text-blue-600 rounded-full shadow-md hover:shadow-lg hover:bg-blue-50 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
+              className="p-3 bg-slate-800 text-blue-400 rounded-full shadow-md hover:shadow-lg hover:bg-slate-700 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <FaLinkedin />
             </a>
@@ -89,7 +141,7 @@ const Home = () => {
               href="https://github.com/KavinduAnj"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white text-gray-800 rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
+              className="p-3 bg-slate-800 text-slate-200 rounded-full shadow-md hover:shadow-lg hover:bg-slate-700 text-xl sm:text-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <FaGithub />
             </a>
@@ -102,14 +154,14 @@ const Home = () => {
           >
             <a
               href="#contact"
-              className="relative group px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg font-semibold shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)] transition-all duration-300 transform hover:-translate-y-1 text-center overflow-hidden"
+              className="relative group px-8 py-3.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-lg font-semibold shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:shadow-[0_0_25px_rgba(99,102,241,0.55)] transition-all duration-300 transform hover:-translate-y-1 text-center overflow-hidden"
             >
               <span className="relative z-10">Hire Me</span>
-              <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
               href="#projects"
-              className="px-8 py-3.5 rounded-full bg-white/80 backdrop-blur-sm text-gray-900 border border-gray-200 text-lg font-semibold shadow-sm hover:shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-1 text-center"
+              className="px-8 py-3.5 rounded-full bg-transparent text-slate-100 border border-slate-600 text-lg font-semibold hover:bg-slate-800 hover:border-slate-500 transition-all duration-300 transform hover:-translate-y-1 text-center"
             >
               My Projects
             </a>
@@ -127,12 +179,12 @@ const Home = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           {/* Decorative soft glow behind the image */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-3xl blur-2xl opacity-30 transform scale-105"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-3xl blur-2xl opacity-30 transform scale-105"></div>
 
           <motion.img
             src={pic1}
             alt="Profile"
-            className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[22rem] lg:h-[22rem] rounded-3xl object-cover shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border-4 border-white/80"
+            className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[22rem] lg:h-[22rem] rounded-3xl object-cover shadow-[0_20px_50px_rgba(0,_0,_0,_0.4)] border-4 border-slate-700/80"
             animate={{ y: [-10, 10, -10] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           />
@@ -140,11 +192,11 @@ const Home = () => {
 
         {/* Arrow Down */}
         <motion.div
-          className="mt-12 lg:mt-16 text-blue-500"
+          className="mt-12 lg:mt-16 text-indigo-300"
           animate={{ y: [0, 12, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white shadow-md shadow-blue-900/5 border border-blue-50/50">
+          <div className="flex items-center justify-center w-14 h-14 rounded-full bg-slate-800 shadow-md border border-slate-700">
             <FaArrowDown className="text-xl" />
           </div>
         </motion.div>
