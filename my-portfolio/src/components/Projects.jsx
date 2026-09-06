@@ -65,11 +65,11 @@ const Projects = () => {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -10 }}
-              className="group relative bg-white/60 backdrop-blur-xl border border-white/50 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(79,70,229,0.15)] overflow-hidden flex flex-col transition-all duration-300"
+              className="group relative bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(99,102,241,0.2)] hover:border-slate-600 overflow-hidden flex flex-col transition-all duration-300"
             >
               {/* Image Container */}
               <div className="relative h-56 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -81,7 +81,7 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 bg-white/90 backdrop-blur-sm text-blue-600 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:text-white"
+                    className="p-4 bg-slate-800/90 backdrop-blur-sm text-indigo-300 border border-slate-700 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 hover:text-white hover:border-transparent"
                   >
                     {isGithub ? <FaGithub className="text-2xl" /> : <FaLink className="text-2xl" />}
                   </a>
@@ -89,20 +89,20 @@ const Projects = () => {
               </div>
 
               {/* Content */}
-              <div className="p-8 flex flex-col flex-grow relative z-30 bg-gradient-to-b from-white/40 to-white/80">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 transition-all duration-300">
+              <div className="p-8 flex flex-col flex-grow relative z-30 bg-gradient-to-b from-slate-800/40 to-slate-800/90">
+                <h3 className="text-2xl font-bold text-slate-100 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-purple-400 transition-all duration-300">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-base leading-relaxed mb-6 flex-grow">
+                <p className="text-slate-400 text-base leading-relaxed mb-6 flex-grow font-light">
                   {project.description}
                 </p>
 
                 {/* Tech Tags */}
-                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-gray-100">
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-700/60">
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1.5 text-xs font-semibold text-indigo-700 bg-indigo-50/80 border border-indigo-100/50 rounded-full shadow-sm"
+                      className="px-3 py-1.5 text-xs font-medium text-indigo-300 bg-indigo-950/60 border border-indigo-800/50 rounded-full shadow-sm"
                     >
                       {tag}
                     </span>

@@ -48,7 +48,7 @@ const Timeline = () => {
   return (
     <div className="max-w-3xl mx-auto py-4 px-2 sm:px-6">
       <motion.div 
-        className="relative border-l-2 border-indigo-200 ml-3 sm:ml-0"
+        className="relative border-l-2 border-slate-700 ml-3 sm:ml-0"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -57,20 +57,20 @@ const Timeline = () => {
         {experiences.map((exp, index) => (
           <motion.div key={index} className="mb-10 ml-8 sm:ml-10 relative group" variants={itemVariants}>
             {/* Glowing Dot */}
-            <span className="absolute flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full -left-[48px] sm:-left-[56px] ring-4 ring-white shadow-md group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(79,70,229,0.5)] transition-all duration-300">
+            <span className="absolute flex items-center justify-center w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full -left-[48px] sm:-left-[56px] ring-4 ring-slate-900 shadow-md group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(99,102,241,0.5)] transition-all duration-300">
               <div className="text-white text-lg">
                 {exp.icon}
               </div>
             </span>
             
             {/* Content Card */}
-            <div className="bg-white/60 backdrop-blur-md border border-white/40 p-5 rounded-2xl shadow-sm hover:shadow-md hover:bg-white/80 transition-all duration-300">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-1">
+            <div className="bg-slate-800/70 backdrop-blur-md border border-slate-700/60 p-5 rounded-2xl shadow-sm hover:shadow-md hover:bg-slate-800/90 hover:border-indigo-500/40 transition-all duration-300">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-100 mb-1">
                 {exp.title}
               </h3>
-              <p className="text-base text-indigo-600 font-medium mb-3">{exp.company}</p>
-              <div className="inline-flex items-center text-sm text-gray-500 bg-gray-100/80 px-3 py-1.5 rounded-full">
-                <FaCalendarAlt className="mr-2 text-indigo-500" />
+              <p className="text-base text-indigo-400 font-medium mb-3">{exp.company}</p>
+              <div className="inline-flex items-center text-sm text-slate-400 bg-slate-900/60 border border-slate-700/50 px-3 py-1.5 rounded-full">
+                <FaCalendarAlt className="mr-2 text-indigo-400" />
                 {exp.date}
               </div>
             </div>

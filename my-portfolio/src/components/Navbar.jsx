@@ -34,8 +34,8 @@ const Navbar = () => {
       <div
         className={`mx-auto max-w-5xl px-6 transition-all duration-500 ease-in-out rounded-full ${
           scrolled
-            ? "bg-white/90 backdrop-blur-xl shadow-md shadow-gray-200/50 border border-gray-100 py-2.5"
-            : "bg-white/60 backdrop-blur-md shadow-sm shadow-gray-200/20 border border-white/60 py-3 mt-2"
+            ? "bg-slate-900/85 backdrop-blur-xl shadow-lg shadow-black/30 border border-slate-700/70 py-2.5"
+            : "bg-slate-900/60 backdrop-blur-md shadow-md shadow-black/20 border border-slate-700/40 py-3 mt-2"
         }`}
       >
         <div className="flex justify-between items-center">
@@ -46,13 +46,15 @@ const Navbar = () => {
               smooth={true}
               duration={600}
               offset={-80}
-              className="cursor-pointer"
+              className="cursor-pointer flex items-center"
             >
-              <img 
-                src={pic5} 
-                alt="Logo" 
-                className="h-10 w-auto sm:h-12 object-contain transition-transform duration-300 hover:scale-105" 
-              />
+              <div className="bg-white/95 px-2.5 py-1 rounded-xl shadow-sm transition-transform duration-300 hover:scale-105">
+                <img 
+                  src={pic5} 
+                  alt="Logo" 
+                  className="h-8 sm:h-9 w-auto object-contain" 
+                />
+              </div>
             </Link>
           </div>
 
@@ -65,9 +67,9 @@ const Navbar = () => {
                 smooth={true}
                 duration={600}
                 spy={true}
-                activeClass="!text-blue-700 bg-white/80 font-semibold shadow-sm border border-gray-100"
+                activeClass="!text-white bg-indigo-500/25 font-semibold shadow-sm border border-indigo-500/40"
                 offset={-80}
-                className="cursor-pointer text-gray-800 hover:text-blue-600 px-5 py-2 rounded-full text-sm lg:text-base font-medium transition-all duration-300 hover:bg-white/60"
+                className="cursor-pointer text-slate-300 hover:text-indigo-400 px-5 py-2 rounded-full text-sm lg:text-base font-medium transition-all duration-300 hover:bg-slate-800/60"
               >
                 {link.label}
               </Link>
@@ -77,7 +79,7 @@ const Navbar = () => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none p-2 rounded-full hover:bg-gray-100 transition-colors"
+            className="md:hidden text-slate-300 hover:text-indigo-400 focus:outline-none p-2 rounded-full hover:bg-slate-800 transition-colors"
             aria-label="Toggle Menu"
           >
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -95,7 +97,7 @@ const Navbar = () => {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="absolute top-full left-0 w-full px-4 pt-4 pb-4 md:hidden"
           >
-            <div className="bg-white/95 backdrop-blur-2xl shadow-2xl border border-gray-100/50 rounded-3xl p-3 flex flex-col space-y-1">
+            <div className="bg-slate-900/95 backdrop-blur-2xl shadow-2xl border border-slate-700/80 rounded-3xl p-3 flex flex-col space-y-1">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.to}
@@ -103,10 +105,10 @@ const Navbar = () => {
                   smooth={true}
                   duration={600}
                   spy={true}
-                  activeClass="!text-blue-600 bg-blue-50/80 font-bold"
+                  activeClass="!text-indigo-400 bg-indigo-950/60 font-bold border border-indigo-500/30"
                   offset={-80}
                   onClick={() => setIsOpen(false)}
-                  className="cursor-pointer text-gray-700 text-lg font-medium px-6 py-3.5 rounded-2xl hover:text-blue-600 hover:bg-blue-50/50 transition-all text-center"
+                  className="cursor-pointer text-slate-300 text-lg font-medium px-6 py-3.5 rounded-2xl hover:text-indigo-400 hover:bg-slate-800/60 transition-all text-center"
                 >
                   {link.label}
                 </Link>
