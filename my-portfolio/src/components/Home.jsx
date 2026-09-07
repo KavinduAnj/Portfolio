@@ -43,10 +43,10 @@ const Home = () => {
           transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute top-1/3 right-[15%] w-4 h-4 rounded-full border-2 border-indigo-300/60"
+          className="absolute bottom-[40%] right-[15%] w-4 h-4 rounded-full border-2 border-indigo-300/60"
           animate={{
-            x: ["0vw", "-10vw", "4vw", "0vw"],
-            y: ["0vh", "20vh", "8vh", "0vh"],
+            x: ["5vw", "10vw", "12vw", "5vw"],
+            y: ["0vh", "-20vh", "8vh", "0vh"],
           }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -59,10 +59,18 @@ const Home = () => {
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
         <motion.div
+          className="absolute bottom-[40%] left-[50%] w-5 h-5 rounded-full bg-orange-500/60"
+          animate={{
+            x: ["0vw", "-5vw", "20vw", "0vw"],
+            y: ["0vh", "20vh", "15vh", "0vh"],
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        />
+        <motion.div
           className="absolute bottom-[25%] left-[10%] w-6 h-6 rounded-full border-2 border-purple-300/40"
           animate={{
-            x: ["0vw", "15vw", "25vw", "10vw", "0vw"],
-            y: ["0vh", "-12vh", "5vh", "-6vh", "0vh"],
+            x: ["0vw", "5vw", "-5vw", "20vw", "0vw"],
+            y: ["0vh", "-12vh", "5vh", "-50vh", "0vh"],
           }}
           transition={{ duration: 24, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
         />

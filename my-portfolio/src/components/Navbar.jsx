@@ -34,8 +34,8 @@ const Navbar = () => {
       <div
         className={`mx-auto max-w-5xl px-6 transition-all duration-500 ease-in-out rounded-full ${
           scrolled
-            ? "bg-slate-900/85 backdrop-blur-xl shadow-lg shadow-black/30 border border-slate-700/70 py-2.5"
-            : "bg-slate-900/60 backdrop-blur-md shadow-md shadow-black/20 border border-slate-700/40 py-3 mt-2"
+            ? "bg-slate-900/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.15)] border border-white/15 py-2.5"
+            : "bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.12)] border border-white/10 py-3 mt-2"
         }`}
       >
         <div className="flex justify-between items-center">

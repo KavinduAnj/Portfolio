@@ -40,9 +40,9 @@ const Contact = () => {
             {/* Email */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="group relative bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(99,102,241,0.15)] hover:border-slate-600 transition-all duration-300"
+              className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_16px_40px_rgba(99,102,241,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-indigo-400/50 transition-all duration-300"
             >
-              <div className="flex-shrink-0 w-14 h-14 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-inner">
+              <div className="flex-shrink-0 w-14 h-14 bg-slate-800/90 border border-white/15 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)]">
                 <FaEnvelope className="text-2xl text-indigo-400" />
               </div>
               <div className="flex-grow">
@@ -60,9 +60,9 @@ const Contact = () => {
             {/* Whatsapp */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="group relative bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(34,197,94,0.15)] hover:border-slate-600 transition-all duration-300"
+              className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_16px_40px_rgba(34,197,94,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-emerald-400/50 transition-all duration-300"
             >
-              <div className="flex-shrink-0 w-14 h-14 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-inner">
+              <div className="flex-shrink-0 w-14 h-14 bg-slate-800/90 border border-white/15 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)]">
                 <FaWhatsapp className="text-2xl text-emerald-400" />
               </div>
               <div className="flex-grow">
@@ -82,9 +82,9 @@ const Contact = () => {
             {/* Messenger */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="group relative bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:border-slate-600 transition-all duration-300"
+              className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_16px_40px_rgba(59,130,246,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-blue-400/50 transition-all duration-300"
             >
-              <div className="flex-shrink-0 w-14 h-14 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-inner">
+              <div className="flex-shrink-0 w-14 h-14 bg-slate-800/90 border border-white/15 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)]">
                 <FaFacebookMessenger className="text-2xl text-blue-400" />
               </div>
               <div className="flex-grow">
@@ -108,15 +108,18 @@ const Contact = () => {
           <h2 className="text-3xl font-bold mb-8 text-slate-100 tracking-tight text-center md:text-left">
             Send a Message
           </h2>
-          <form className="bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-8 shadow-[0_8px_30px_rgba(0,0,0,0.3)] space-y-6 flex-grow flex flex-col justify-between">
-            <div className="space-y-6">
+          <form className="relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] space-y-6 flex-grow flex flex-col justify-between overflow-hidden">
+            {/* Soft internal glass glow */}
+            <div className="absolute top-0 right-0 w-60 h-60 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div className="space-y-6 relative z-10">
               {/* Name */}
               <div className="relative group">
                 <label className="block text-sm font-medium text-slate-300 mb-2">Name</label>
                 <input
                   type="text"
                   placeholder="John Doe"
-                  className="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all duration-300 shadow-inner"
+                  className="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 shadow-inner"
                 />
               </div>
 
@@ -126,7 +129,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="john@example.com"
-                  className="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all duration-300 shadow-inner"
+                  className="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 shadow-inner"
                 />
               </div>
 
@@ -136,7 +139,7 @@ const Contact = () => {
                 <textarea
                   rows="4"
                   placeholder="Tell me about your project..."
-                  className="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all duration-300 shadow-inner resize-none"
+                  className="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 shadow-inner resize-none"
                 ></textarea>
               </div>
             </div>

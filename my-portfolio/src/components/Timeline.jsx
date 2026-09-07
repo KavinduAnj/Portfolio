@@ -64,12 +64,12 @@ const Timeline = () => {
             </span>
             
             {/* Content Card */}
-            <div className="bg-slate-800/70 backdrop-blur-md border border-slate-700/60 p-5 rounded-2xl shadow-sm hover:shadow-md hover:bg-slate-800/90 hover:border-indigo-500/40 transition-all duration-300">
+            <div className="bg-gradient-to-br from-slate-800/90 via-slate-800/60 to-slate-900/80 backdrop-blur-xl border border-white/15 p-5 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.25),inset_0_1px_0_0_rgba(255,255,255,0.12)] hover:shadow-[0_8px_30px_rgba(99,102,241,0.2),inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:border-indigo-400/50 hover:bg-slate-800/90 transition-all duration-300">
               <h3 className="text-lg sm:text-xl font-bold text-slate-100 mb-1">
                 {exp.title}
               </h3>
               <p className="text-base text-indigo-400 font-medium mb-3">{exp.company}</p>
-              <div className="inline-flex items-center text-sm text-slate-400 bg-slate-900/60 border border-slate-700/50 px-3 py-1.5 rounded-full">
+              <div className="inline-flex items-center text-sm text-slate-300 bg-slate-900/80 border border-white/10 px-3 py-1.5 rounded-full shadow-inner">
                 <FaCalendarAlt className="mr-2 text-indigo-400" />
                 {exp.date}
               </div>

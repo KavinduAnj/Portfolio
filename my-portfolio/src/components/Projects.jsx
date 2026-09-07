@@ -65,8 +65,11 @@ const Projects = () => {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -10 }}
-              className="group relative bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(99,102,241,0.2)] hover:border-slate-600 overflow-hidden flex flex-col transition-all duration-300"
+              className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_20px_45px_rgba(99,102,241,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-indigo-400/50 overflow-hidden flex flex-col transition-all duration-300"
             >
+              {/* Subtle ambient light glow behind card */}
+              <div className="absolute top-0 right-0 w-52 h-52 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all duration-500 pointer-events-none"></div>
+
               {/* Image Container */}
               <div className="relative h-56 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -81,7 +84,7 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 bg-slate-800/90 backdrop-blur-sm text-indigo-300 border border-slate-700 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 hover:text-white hover:border-transparent"
+                    className="p-4 bg-slate-800/90 backdrop-blur-sm text-indigo-300 border border-white/20 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 hover:text-white hover:border-transparent"
                   >
                     {isGithub ? <FaGithub className="text-2xl" /> : <FaLink className="text-2xl" />}
                   </a>
@@ -98,11 +101,11 @@ const Projects = () => {
                 </p>
 
                 {/* Tech Tags */}
-                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-700/60">
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/10">
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1.5 text-xs font-medium text-indigo-300 bg-indigo-950/60 border border-indigo-800/50 rounded-full shadow-sm"
+                      className="px-3 py-1.5 text-xs font-medium text-indigo-300 bg-indigo-950/70 border border-indigo-500/30 rounded-full shadow-sm"
                     >
                       {tag}
                     </span>

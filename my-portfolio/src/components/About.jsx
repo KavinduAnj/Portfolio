@@ -10,27 +10,28 @@ const About = () => {
 
         {/* Intro Card */}
         <motion.div
-          className="relative mt-8 mx-auto w-full max-w-4xl rounded-[2.5rem] bg-slate-800/60 border border-slate-700/60 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-xl overflow-hidden"
+          className="relative mt-8 mx-auto w-full max-w-4xl rounded-[2.5rem] bg-gradient-to-br from-slate-800/80 via-slate-800/50 to-slate-900/80 border border-white/15 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] backdrop-blur-2xl overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          {/* Subtle accent gradient inside card */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+          {/* Vibrant ambient gradients inside card to create frosted glass illumination */}
+          <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
 
           <div className="relative p-8 sm:p-12 md:p-16">
             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
 
               {/* Highlight Icons Column */}
               <div className="flex md:flex-col gap-6 text-indigo-400 shrink-0">
-                <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700/80 shadow-md flex items-center justify-center text-2xl transform rotate-3 hover:rotate-0 hover:border-indigo-500/50 transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-slate-800/90 border border-white/15 shadow-[0_4px_20px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.15)] flex items-center justify-center text-2xl transform rotate-3 hover:rotate-0 hover:border-indigo-400/60 hover:text-indigo-300 transition-all">
                   <FaUserGraduate />
                 </div>
-                <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700/80 shadow-md flex items-center justify-center text-2xl transform -rotate-3 hover:rotate-0 hover:border-indigo-500/50 transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-slate-800/90 border border-white/15 shadow-[0_4px_20px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.15)] flex items-center justify-center text-2xl transform -rotate-3 hover:rotate-0 hover:border-indigo-400/60 hover:text-indigo-300 transition-all">
                   <FaLaptopCode />
                 </div>
-                <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700/80 shadow-md flex items-center justify-center text-2xl transform rotate-3 hover:rotate-0 hover:border-indigo-500/50 transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-slate-800/90 border border-white/15 shadow-[0_4px_20px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.15)] flex items-center justify-center text-2xl transform rotate-3 hover:rotate-0 hover:border-indigo-400/60 hover:text-indigo-300 transition-all">
                   <FaLightbulb />
                 </div>
               </div>
@@ -72,7 +73,9 @@ const About = () => {
             <div className="h-1.5 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto"></div>
           </div>
 
-          <div className="bg-slate-800/60 rounded-[2.5rem] border border-slate-700/60 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-xl p-4 sm:p-8">
+          <div className="relative bg-gradient-to-br from-slate-800/80 via-slate-800/50 to-slate-900/80 rounded-[2.5rem] border border-white/15 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] backdrop-blur-2xl p-4 sm:p-8 overflow-hidden">
+            {/* Soft internal glass glow */}
+            <div className="absolute top-0 right-1/4 w-72 h-72 bg-purple-500/15 rounded-full blur-3xl pointer-events-none"></div>
             <Timeline />
           </div>
         </motion.div>
