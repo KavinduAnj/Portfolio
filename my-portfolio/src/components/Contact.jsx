@@ -14,17 +14,17 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.6, ease: "easeOut" } 
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
   },
 };
 
 const Contact = () => {
   return (
     <div className="py-12 px-6 sm:px-10 lg:px-12 flex items-center justify-center">
-      <motion.div 
+      <motion.div
         className="max-w-6xl w-full grid md:grid-cols-2 gap-12 lg:gap-20"
         variants={containerVariants}
         initial="hidden"
@@ -38,7 +38,7 @@ const Contact = () => {
           </h2>
           <div className="space-y-6 flex-grow">
             {/* Email */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.02 }}
               className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_16px_40px_rgba(99,102,241,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-indigo-400/50 transition-all duration-300"
             >
@@ -47,9 +47,9 @@ const Contact = () => {
               </div>
               <div className="flex-grow">
                 <h3 className="text-lg font-semibold text-slate-100">Email</h3>
-                <p className="text-slate-400 mb-1">user@gmail.com</p>
+                <p className="text-slate-400 mb-1">wkanjana1590@gmail.com</p>
                 <a
-                  href="mailto:user@gmail.com"
+                  href="mailto:wkanjana1590@gmail.com"
                   className="text-sm font-medium text-indigo-400 flex items-center gap-2 hover:text-purple-400 transition-colors"
                 >
                   Write me <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -58,7 +58,7 @@ const Contact = () => {
             </motion.div>
 
             {/* Whatsapp */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.02 }}
               className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_16px_40px_rgba(34,197,94,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-emerald-400/50 transition-all duration-300"
             >
@@ -67,9 +67,9 @@ const Contact = () => {
               </div>
               <div className="flex-grow">
                 <h3 className="text-lg font-semibold text-slate-100">Whatsapp</h3>
-                <p className="text-slate-400 mb-1">999-888-777</p>
+                <p className="text-slate-400 mb-1">0716053892</p>
                 <a
-                  href="https://wa.me/999888777"
+                  href="https://wa.me/0716053892"
                   className="text-sm font-medium text-emerald-400 flex items-center gap-2 hover:text-emerald-300 transition-colors"
                   target="_blank"
                   rel="noreferrer"
@@ -80,7 +80,7 @@ const Contact = () => {
             </motion.div>
 
             {/* Messenger */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.02 }}
               className="group relative bg-gradient-to-br from-slate-800/85 via-slate-800/60 to-slate-900/80 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 flex items-center gap-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.37),inset_0_1px_0_0_rgba(255,255,255,0.15)] hover:shadow-[0_16px_40px_rgba(59,130,246,0.25),inset_0_1px_0_0_rgba(255,255,255,0.25)] hover:border-blue-400/50 transition-all duration-300"
             >
