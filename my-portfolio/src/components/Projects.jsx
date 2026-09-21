@@ -4,8 +4,16 @@ import { motion } from "framer-motion";
 import pic2 from '../assets/pic2.png';
 import pic3 from '../assets/pic3.png';
 import pic4 from '../assets/pic4.png';
+import pic6 from '../assets/pic6.png';
 
 const projects = [
+  {
+    title: "ResQNow",
+    description: "A crowdsourced, location-aware accident reporting and emergency response application",
+    link: "https://res-q-now-crowdsourced-location-awa-alpha.vercel.app/",
+    image: pic6,
+    tags: ["React native", "Node js", "Express js", "React js", "Mongo db", "Cloudinary",]
+  },
   {
     title: "Travel Website",
     description: "Responsive travel landing page with smooth scrolling and engaging animations.",
